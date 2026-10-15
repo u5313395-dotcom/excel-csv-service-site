@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f8fb" />
+    <title>Excel・CSV整形代行｜ファイル結合・列整理・重複除外</title>
+    <meta name="description" content="Excel・CSVのファイル結合、列整理、完全一致重複の除外、条件別集計などを事前に確認したルールに沿って代行します。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Excel・CSV整形代行｜ファイル結合・列整理・重複除外" />
+    <meta property="og:description" content="Excel・CSVの結合、列整理、重複除外、条件別集計などを、合意したルールに沿って行うファイル作業代行です。" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d3b57'/%3E%3Cpath d='M18 19h28v7H18zm0 12h28v5H18zm0 10h18v5H18z' fill='%23fff'/%3E%3Cpath d='m39 42 5 5 9-11' fill='none' stroke='%23e68149' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="config.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へ移動</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Excel・CSV整形代行 トップ">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>Excel・CSV整形代行</span>
+        </a>
+        <nav class="main-nav" aria-label="メインナビゲーション">
+          <a href="#service">サービス</a>
+          <a href="#ad-sample">広告の納品見本</a>
+          <a href="#price">料金</a>
+          <a href="#faq">よくある質問</a>
+        </nav>
+        <a class="header-cta" href="#contact" data-contact-cta>相談について</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-wrap" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-status-short>事前相談のみ受付中</span></p>
+          <h1 id="hero-title">報告前のExcel・CSV整理を、<br /><em>照合記録付きで</em>納品。</h1>
+          <p class="hero-lede">広告媒体ごとのCSVを、合意したExcel様式へ整理。行数・広告費の照合と要確認一覧も添えます。一般のファイル結合・列整理・集計もご相談いただけます。</p>
+          <p class="status-message" data-status-message aria-live="polite">現在は匿名化サンプルによる事前相談のみ受け付けています。実データは受け取りません。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact" data-contact-cta>匿名化サンプルで相談する</a>
+            <a class="text-link" href="#ad-sample">広告向けの納品見本を見る</a>
+          </div>
+          <p class="hero-note">ファイルのアップロード機能はありません。個人情報・取引先名・社外秘情報は送らないでください。</p>
+        </div>
+        <div class="hero-visual" aria-label="架空広告見本の流れ。2媒体5行を整理し、費用の空欄1件を記録">
+          <div class="visual-topline"><span>広告向け納品見本</span><span class="visual-tag">架空データ</span></div>
+          <div class="file-stack">
+            <div class="file-card"><span class="file-icon csv-icon">CSV</span><span><strong>Googleの架空CSV</strong><small>2行・費用25,000円</small></span></div>
+            <div class="file-card"><span class="file-icon csv-icon">CSV</span><span><strong>Metaの架空CSV</strong><small>3行・費用に空欄1件</small></span></div>
+          </div>
+          <div class="merge-line"><span></span><b>合意したルールで整形</b><span></span></div>
+          <div class="result-card">
+            <div class="result-heading"><span>整理したExcel ＋ 確認記録</span></div>
+            <div class="result-row"><span>入力 → 出力</span><strong>5 行 → 5 行</strong></div>
+            <div class="result-row"><span>数値費用の照合</span><strong>媒体別に差額0円</strong></div>
+            <div class="result-row"><span>Metaの月間合計</span><strong>費用欠損のため未確定</strong></div>
+          </div>
+          <p class="visual-caption">架空見本の抜粋です。下の見本で詳細を確認できます。</p>
+        </div>
+      </section>
+
+      <section class="prelaunch-strip" aria-label="受付状況">
+        <div class="strip-inner"><span class="strip-icon" aria-hidden="true">i</span><p data-status-long>正式受付開始前のため、匿名化サンプルによる事前相談のみ受け付けています。実データの受渡しは行いません。</p></div>
+      </section>
+
+      <section class="ad-showcase section-pad" id="ad-sample" aria-labelledby="ad-title">
+        <div class="section-wrap">
+          <div class="ad-intro">
+            <div class="section-heading"><p class="section-kicker">広告会社・運用担当者向け</p><h2 id="ad-title">報告前のデータ整理を、<br />確認結果付きのExcelに。</h2><p>媒体ごとに列の違うCSVを、合意した様式へ整理。元の行数・広告費との照合結果と、確認が必要な箇所も一緒にお渡しします。</p></div>
+            <p class="ad-fiction">架空データの納品見本<span>2026年8月・2媒体・5行<br />顧客実績ではありません</span></p>
+          </div>
+          <div class="ad-delivery-flow" aria-label="お渡しいただくものと納品物">
+            <div class="ad-source"><span class="ad-step-label">お渡しいただくもの</span><h3>媒体別のCSVと<br />希望するExcel様式</h3><p>最初はファイル数・列名・完成イメージだけで相談できます。</p><div class="ad-file-labels"><span>Googleの架空CSV · 2行</span><span>Metaの架空CSV · 3行</span></div></div>
+            <div class="ad-delivery"><span class="ad-step-label">お返しするもの</span><h3>報告資料に使う整理一覧と、確認の記録</h3><ol class="ad-deliverable-list"><li><b>01</b><div><strong>整理したExcel</strong><span>媒体・日付・費用を見やすい列に。各行の出どころも残します。</span></div></li><li><b>02</b><div><strong>行数・広告費の照合結果</strong><span>元データと整理後の数値を並べ、転記前後の差を確認できます。</span></div></li><li><b>03</b><div><strong>要確認箇所の一覧</strong><span>空欄や指標の違いを記録。報告を確定する前に確認する点が分かります。</span></div></li></ol><p class="ad-small">この見本は、1つのExcelの「納品一覧」「架空入力」の2シートにまとめています。</p></div>
+          </div>
+          <div class="ad-report" aria-labelledby="ad-report-title">
+            <div class="ad-report-heading"><div><p class="ad-step-label">納品一覧の抜粋</p><h3 id="ad-report-title">数字と、確定できない理由を一緒に見る。</h3></div><span class="ad-period">2026年8月 / JPY</span></div>
+            <div class="ad-summary"><div><span>Google広告 · 2行</span><strong>25,000<small>円</small></strong><p>全2行に費用の数値あり</p></div><div><span>Meta広告 · 3行</span><strong class="ad-pending">月間合計は未確定</strong><p>数値がある2行の小計：30,000円</p></div><div class="ad-alert-card"><span>報告確定前の確認</span><strong>費用の空欄 <small>1件</small></strong><p>元行を残し、0円で埋めません。</p></div></div>
+            <div class="table-scroll ad-table-wrap" tabindex="0" role="region" aria-label="整理一覧。小さい画面では横にスクロールできます"><table class="ad-table"><caption>整理後：列名をそろえ、元ファイルと元行を記録</caption><thead><tr><th scope="col">媒体</th><th scope="col">日付</th><th scope="col">キャンペーン</th><th scope="col">費用（円）</th><th scope="col">元ファイル：行</th><th scope="col">確認状態</th></tr></thead><tbody><tr><td>Google</td><td>08/01</td><td>Search_A</td><td>18,000</td><td>google_fictional.csv：2</td><td>数値あり</td></tr><tr><td>Google</td><td>08/02</td><td>Brand_B</td><td>7,000</td><td>google_fictional.csv：3</td><td>数値あり</td></tr><tr><td>Meta</td><td>08/01</td><td>Lead_C</td><td>19,000</td><td>meta_fictional.csv：2</td><td>数値あり</td></tr><tr><td>Meta</td><td>08/02</td><td>Remarketing_D</td><td>11,000</td><td>meta_fictional.csv：3</td><td>数値あり</td></tr><tr class="ad-missing-row"><td>Meta</td><td>08/03</td><td>Missing_cost</td><td><strong>未確認</strong></td><td>meta_fictional.csv：4</td><td><strong>費用欠損・要確認</strong></td></tr></tbody></table></div>
+            <div class="ad-check-grid"><div><h4>元データとの照合</h4><dl class="ad-checks"><div><dt>Googleの行数</dt><dd>2行 → 2行 <span>一致</span></dd></div><div><dt>Metaの行数</dt><dd>3行 → 3行 <span>一致</span></dd></div><div><dt>Googleの数値費用</dt><dd>25,000円 → 25,000円 <span>差額0円</span></dd></div><div><dt>Metaの数値費用</dt><dd>30,000円 → 30,000円 <span>差額0円※</span></dd></div></dl><p class="ad-small">※数値がある2行だけの照合です。費用欠損を含む月間合計の確定を意味しません。</p></div><div class="ad-next-check"><h4>担当者に確認していただくこと</h4><p><strong>Metaの元行4の費用</strong><br />提供者に値を確認してから、月間合計を確定します。</p><p><strong>クリック指標の定義</strong><br />Googleの「clicks」とMetaの「link_clicks」は元の指標名を残し、合算しません。</p></div></div>
+            <details class="ad-input-details"><summary>整理前のCSVと、列の対応を見る</summary><div class="ad-input-grid"><div><h4>Googleの架空CSV</h4><p><code>date</code> → 日付<br /><code>campaign</code> → キャンペーン<br /><code>cost_jpy</code> → 費用（円）</p><a href="samples/advertising/google_fictional.csv" download>入力CSVを見る・保存する</a></div><div><h4>Metaの架空CSV</h4><p><code>reporting_date</code> → 日付<br /><code>campaign_name</code> → キャンペーン<br /><code>spend_jpy</code> → 費用（円）</p><a href="samples/advertising/meta_fictional.csv" download>入力CSVを見る・保存する</a></div></div><p class="ad-small">この例では期間・通貨・費用の範囲・日別の集計単位をそろえる前提です。実案件では列名に加え、指標の意味も確認します。</p></details>
+          </div>
+          <div class="ad-downloads"><div><h3>実際のExcelを開いて確認できます。</h3><p>架空値だけの見本です。元行の参照、照合表、要確認一覧までご覧いただけます。</p></div><div class="ad-download-actions"><a class="button button-primary" href="samples/advertising/ad-report-sample.xlsx" download="広告レポート整理_架空納品見本.xlsx">Excel見本をダウンロード</a><a class="text-link" href="samples/advertising/ad-report-sample.zip" download="広告レポート整理_架空見本一式.zip">入力CSV付きの見本一式（ZIP）</a></div></div>
+          <p class="ad-small ad-sample-scope">合意済みの架空列・固定5行の見本です。実際の媒体エクスポート仕様を再現したものではありません。ご希望の列構成・様式への対応は、作業前に確認します。</p>
+          <div class="ad-fit-grid"><div><h3>こんな部分だけでもご相談ください。</h3><ul><li>自動レポートの後に残る、顧客指定Excelへの転記</li><li>媒体ごとに違う列の整理と、費用の照合</li><li>報告前に確認する空欄・不一致の洗い出し</li></ul><p>広告運用・効果分析・施策判断は含みません。最初は1顧客・1か月分、最大2媒体の限定作業を想定しています。</p></div><div class="ad-consult"><h3>まずは「この作業を頼めるか」から。</h3><p>ファイル数・おおよその行数・列名・希望する完成様式をメールでお知らせください。実データや添付ファイルは不要です。</p><a class="button button-primary" data-ad-email href="#contact">広告CSVの整理を相談する</a><p class="ad-small">相談・見積りは無料。対応範囲・料金・納期を確認してから依頼を判断できます。広告向けの列対応・照合は個別見積りです。</p></div></div>
+        </div>
+      </section>
+
+      <section class="section-wrap problems section-pad" aria-labelledby="problems-title">
+        <div class="section-heading"><p class="section-kicker">REPETITIVE FILE WORK</p><h2 id="problems-title">こんな作業ありませんか？</h2><p>毎回同じ手順で行うファイル整理を、確認したルールに沿って代行します。</p></div>
+        <div class="problem-grid">
+          <article class="problem-card"><span class="card-index">01</span><h3>毎月届くCSVを<br />ひとつにまとめる</h3><p>複数のファイルを同じ表に集約。</p></article>
+          <article class="problem-card"><span class="card-index">02</span><h3>Excelの列を<br />毎回並べ直す</h3><p>必要な列を選び、指定順に整理。</p></article>
+          <article class="problem-card"><span class="card-index">03</span><h3>重複データを<br />目で確認している</h3><p>指定キーで完全一致する行を除外。</p></article>
+          <article class="problem-card"><span class="card-index">04</span><h3>必要な列だけ<br />別ファイルから集める</h3><p>列名とルールを確認して抽出。</p></article>
+          <article class="problem-card"><span class="card-index">05</span><h3>処理の前後で<br />件数も確認したい</h3><p>入力・出力行数などを記録。</p></article>
+        </div>
+      </section>
+
+      <section class="service-section section-pad" id="service" aria-labelledby="service-title">
+        <div class="section-wrap service-layout">
+          <div class="section-heading"><p class="section-kicker">WHAT WE DO</p><h2 id="service-title">確認した手順で、<br />ファイル作業を代行。</h2><p>お客様のパソコンにツールを設定するサービスではありません。対象ファイルと完成イメージを匿名化サンプルで確認し、決めた範囲で処理します。</p></div>
+          <div class="service-points">
+            <div class="service-point"><span class="point-number">01</span><div><h3>作業ルールを先に確認</h3><p>対象列、重複とみなす条件、集計方法を作業前にすり合わせます。</p></div></div>
+            <div class="service-point"><span class="point-number">02</span><div><h3>元ファイルはそのまま</h3><p>元のファイルを直接書き換えず、処理後のファイルを別に作成します。</p></div></div>
+            <div class="service-point"><span class="point-number">03</span><div><h3>処理件数を記録</h3><p>入力・出力行数や重複除外数など、確認できる項目を記録します。</p></div></div>
+            <div class="service-point"><span class="point-number">04</span><div><h3>範囲外は先に相談</h3><p>標準範囲を超える依頼は、作業前に対応可否と別見積りを確認します。</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-wrap section-pad tasks" aria-labelledby="tasks-title">
+        <div class="section-heading section-heading-row"><div><p class="section-kicker">SCOPE</p><h2 id="tasks-title">対応できる作業</h2></div><p>一つの依頼につき、事前に合意した1つの処理フローが標準です。</p></div>
+        <div class="task-list">
+          <span>複数ファイルの結合</span><span>列の抽出・列名変更</span><span>列の並べ替え</span><span>指定列の表記統一・空白除去</span><span>完全一致する重複行の除外</span><span>文字列順の並べ替え</span><span>条件別の数値集計 1種類</span><span>処理件数の記録</span>
+        </div>
+        <p class="scope-footnote">「同じ列名」を基本対象とします。列の並び順が異なるファイルは対応可能です。表記の意味を推測して同一人物・同一企業などを判断する「名寄せ」は行いません。</p>
+      </section>
+
+      <section class="sample-section section-pad" id="sample" aria-labelledby="sample-title">
+        <div class="section-wrap">
+          <div class="section-heading"><p class="section-kicker">EXAMPLES</p><h2 id="sample-title">3つの架空データで、処理内容を紹介します。</h2><p>ファイルの結合、列の整理、重複除外、条件別集計の例です。</p></div>
+          <div class="sample-label"><span class="sample-dot" aria-hidden="true"></span>架空データによるサンプルです</div>
+          <div class="sample-cases">
+            <article class="sample-case" aria-labelledby="sample-case-1">
+              <div class="sample-case-heading"><span class="sample-case-number">01</span><div><h3 id="sample-case-1">売上データの完全一致行を除外</h3><p>結合済みの一覧から完全一致する重複行を1件除き、分類別に合計。</p></div></div>
+              <div class="sample-grid">
+                <div class="table-panel"><div class="table-title"><span class="table-step">INPUT</span><h4>結合済み・処理前</h4></div><div class="table-scroll"><table><caption class="sr-only">架空売上データの処理前一覧。6行。</caption><thead><tr><th>商品ID</th><th>商品名</th><th>分類</th><th>金額</th></tr></thead><tbody><tr><td>001</td><td> コーヒー豆 </td><td>食品</td><td>1,200</td></tr><tr><td>002</td><td>ノート</td><td>文具</td><td>500</td></tr><tr><td>003</td><td>紅茶</td><td>食品</td><td>800</td></tr><tr><td>001</td><td>コーヒー豆</td><td>食品</td><td>1,200</td></tr><tr><td>004</td><td>ペン</td><td>文具</td><td>300</td></tr><tr><td>005</td><td>クッキー</td><td>食品</td><td>600</td></tr></tbody></table></div><p class="table-note">6行</p></div>
+                <div class="sample-arrow" aria-hidden="true"><span>IDで重複除外</span><b>→</b></div>
+                <div class="table-panel output-panel"><div class="table-title"><span class="table-step">OUTPUT</span><h4>整形結果</h4></div><div class="table-scroll"><table><caption class="sr-only">重複除外後の架空売上データ。5行。</caption><thead><tr><th>商品ID</th><th>商品名</th><th>分類</th><th>金額</th></tr></thead><tbody><tr><td>001</td><td>コーヒー豆</td><td>食品</td><td>1,200</td></tr><tr><td>002</td><td>ノート</td><td>文具</td><td>500</td></tr><tr><td>003</td><td>紅茶</td><td>食品</td><td>800</td></tr><tr><td>004</td><td>ペン</td><td>文具</td><td>300</td></tr><tr><td>005</td><td>クッキー</td><td>食品</td><td>600</td></tr></tbody></table></div><p class="table-note">5行 <span>重複除外 1件</span></p></div>
+              </div>
+              <p class="sample-caveat">分類別合計: 食品 2,600円、文具 800円。商品名の前後空白を除き、完全一致する重複1行を除いた架空例です。</p>
+            </article>
+
+            <article class="sample-case" aria-labelledby="sample-case-2">
+              <div class="sample-case-heading"><span class="sample-case-number">02</span><div><h3 id="sample-case-2">列の並びが違う仕入先CSVをまとめる</h3><p>同じ列名のファイルを結合し、必要列を選択・改名して順番を統一。</p></div></div>
+              <div class="sample-grid">
+                <div class="table-panel"><div class="table-title"><span class="table-step">INPUT</span><h4>仕入先ごとのCSV</h4></div>
+                  <div class="source-mini"><p>仕入先A.csv</p><div class="table-scroll"><table><caption class="sr-only">仕入先Aの架空CSV</caption><thead><tr><th>商品コード</th><th>商品名</th><th>在庫数</th><th>仕入先</th><th>備考</th></tr></thead><tbody><tr><td>A-01</td><td> コーヒー豆 </td><td>12</td><td>仕入先A</td><td>定番</td></tr></tbody></table></div></div>
+                  <div class="source-mini"><p>仕入先B.csv（列順が異なる）</p><div class="table-scroll"><table><caption class="sr-only">仕入先Bの架空CSV</caption><thead><tr><th>備考</th><th>仕入先</th><th>在庫数</th><th>商品名</th><th>商品コード</th></tr></thead><tbody><tr><td>新商品</td><td>仕入先B</td><td>8</td><td> 紅茶 </td><td>A-02</td></tr></tbody></table></div></div>
+                </div>
+                <div class="sample-arrow" aria-hidden="true"><span>列を選択・整形</span><b>→</b></div>
+                <div class="table-panel output-panel"><div class="table-title"><span class="table-step">OUTPUT</span><h4>結合・整形後</h4></div><div class="table-scroll"><table><caption class="sr-only">列順を統一した商品一覧。架空データ2行。</caption><thead><tr><th>SKU</th><th>商品名</th><th>在庫数</th></tr></thead><tbody><tr><td>A-01</td><td>コーヒー豆</td><td>12</td></tr><tr><td>A-02</td><td>紅茶</td><td>8</td></tr></tbody></table></div><p class="table-note">2ファイル・2行 <span>必要列 3つ</span></p></div>
+              </div>
+              <p class="sample-caveat">商品名の前後空白を除き、商品コード列をSKUに変更した架空例です。列名が一致しないファイルは事前確認が必要です。</p>
+            </article>
+
+            <article class="sample-case" aria-labelledby="sample-case-3">
+              <div class="sample-case-heading"><span class="sample-case-number">03</span><div><h3 id="sample-case-3">月別売上を店舗・カテゴリごとに集計</h3><p>列順の違う2つの売上CSVを結合し、月・店舗・カテゴリ別に合計。</p></div></div>
+              <div class="sample-grid">
+                <div class="table-panel"><div class="table-title"><span class="table-step">INPUT</span><h4>8月の売上CSV</h4></div>
+                  <div class="source-mini"><p>東京店.csv</p><div class="table-scroll"><table><caption class="sr-only">東京店の架空売上CSV</caption><thead><tr><th>月</th><th>店舗</th><th>カテゴリ</th><th>売上</th></tr></thead><tbody><tr><td>2026-08</td><td>東京</td><td>飲料</td><td>1,200</td></tr><tr><td>2026-08</td><td>東京</td><td>軽食</td><td>800</td></tr></tbody></table></div></div>
+                  <div class="source-mini"><p>別ファイル.csv（列順が異なる）</p><div class="table-scroll"><table><caption class="sr-only">列順の異なる架空売上CSV</caption><thead><tr><th>売上</th><th>カテゴリ</th><th>店舗</th><th>月</th></tr></thead><tbody><tr><td>600</td><td>飲料</td><td>東京</td><td>2026-08</td></tr><tr><td>900</td><td>飲料</td><td>大阪</td><td>2026-08</td></tr></tbody></table></div></div>
+                </div>
+                <div class="sample-arrow" aria-hidden="true"><span>条件別に合計</span><b>→</b></div>
+                <div class="table-panel output-panel"><div class="table-title"><span class="table-step">OUTPUT</span><h4>集計シート</h4></div><div class="table-scroll"><table><caption class="sr-only">2026年8月の店舗・カテゴリ別売上合計。架空データ。</caption><thead><tr><th>月</th><th>店舗</th><th>カテゴリ</th><th>売上合計</th></tr></thead><tbody><tr><td>2026-08</td><td>東京</td><td>飲料</td><td>1,800</td></tr><tr><td>2026-08</td><td>東京</td><td>軽食</td><td>800</td></tr><tr><td>2026-08</td><td>大阪</td><td>飲料</td><td>900</td></tr></tbody></table></div><p class="table-note">入力4行 <span>集計3区分</span></p></div>
+              </div>
+              <p class="sample-caveat">元の4行は整形結果シートに残し、集計シートに3区分の合計を出した架空例です。</p>
+            </article>
+          </div>
+          <p class="sample-caveat">すべて架空データの例です。実際の処理内容は、確認したファイルと合意したルールに合わせて決めます。</p>
+        </div>
+      </section>
+
+      <section class="section-wrap section-pad pricing" id="price" aria-labelledby="price-title">
+        <div class="pricing-card">
+          <div class="pricing-main"><p class="section-kicker">STANDARD PLAN</p><h2 id="price-title">Excel・CSV<br />結合・整形代行</h2><p class="price-context" data-price-context>販売検証中の標準価格案</p><p class="price"><span data-price>5,000</span><small>円</small></p><p class="price-sub" data-price-note>受付開始前の価格案です。売上実績や適正価格が確認された金額ではありません。</p><a class="button button-light" href="#contact" data-contact-cta>匿名化サンプルで相談する</a></div>
+          <div class="pricing-details"><h3>標準範囲</h3><ul class="check-list"><li>CSV または Excel（xlsx）</li><li>合計5ファイル・20,000行以内</li><li>同じ列名を基本対象（列順違いは対応可能）</li><li>合意した1つの処理フロー</li><li>条件別の数値集計は1種類</li><li>仕様内の修正1回</li></ul><div class="quote-note"><span aria-hidden="true">i</span><p>範囲を超える場合は、作業開始前に対応可否と別見積りを確認します。</p></div></div>
+        </div>
+      </section>
+
+      <p class="section-wrap ad-small" style="margin-top:-3rem;margin-bottom:3rem">上記は一般の結合・整形の標準範囲案です。広告向けの媒体別列対応・照合・ご指定様式への整理は、内容を確認して個別に見積ります。</p>
+
+      <section class="deliverables-section section-pad" aria-labelledby="deliverables-title">
+        <div class="section-wrap deliverables-layout"><div class="section-heading"><p class="section-kicker">DELIVERABLES</p><h2 id="deliverables-title">お渡しするもの</h2><p>処理結果と件数が確認できる形でまとめます。</p></div><div class="deliverable-cards"><article class="deliverable-card"><span class="deliverable-icon" aria-hidden="true">XLS</span><h3>整形済みファイル</h3><p>合意した形式のExcelまたはCSV。</p></article><article class="deliverable-card"><span class="deliverable-icon record-icon" aria-hidden="true">LOG</span><h3>処理記録</h3><p>入力ファイル数、入力・出力行数、重複除外件数など。</p></article></div></div>
+      </section>
+
+      <section class="section-wrap section-pad flow" aria-labelledby="flow-title">
+        <div class="section-heading"><p class="section-kicker">HOW IT WORKS</p><h2 id="flow-title">相談から納品まで</h2></div>
+        <ol class="flow-list"><li><span class="flow-no">STEP 01</span><h3>匿名化サンプルを確認</h3><p>個人情報・取引先名・社外秘情報を含まない数行と、完成イメージを確認します。</p></li><li><span class="flow-no">STEP 02</span><h3>仕様を確認</h3><p>対象ファイル、処理ルール、納品形式、範囲、金額、納期を確認します。</p></li><li><span class="flow-no">STEP 03</span><h3>処理・件数を照合</h3><p>合意したルールに沿って処理し、入力・出力件数などを確認します。</p></li><li><span class="flow-no">STEP 04</span><h3>ファイルと記録を納品</h3><p>整形済みのExcel・CSVと処理記録をお渡しします。</p></li></ol>
+      </section>
+
+      <section class="limits-section section-pad" aria-labelledby="limits-title">
+        <div class="section-wrap limits-layout"><div class="section-heading"><p class="section-kicker">LIMITS</p><h2 id="limits-title">対応できないこと・注意事項</h2><p data-limits-message>現在は正式受付開始前です。下記に加え、匿名化サンプル以外のデータは受け取りません。</p></div><ul class="limits-list"><li>xlsxは先頭シートのみ</li><li>マクロ付き・パスワード保護ファイル</li><li>Excel数式の再計算（読み込みには保存済みの計算結果が必要）</li><li>1セル32,767文字を超えるデータ</li><li>Excelの精度を超える数値セル・集計金額（有効数字15桁が目安）</li><li>意味を推測する名寄せ、会計・税務判断</li><li>Webスクレイピング、外部システム連携</li><li>個人情報・取引先名・社外秘情報を含むデータ</li><li>日付・数値順の並べ替え（匿名化サンプルで期待順を確認し、対応可否を判断）</li></ul></div>
+      </section>
+
+      <section class="section-wrap section-pad faq" id="faq" aria-labelledby="faq-title">
+        <div class="section-heading"><p class="section-kicker">FAQ</p><h2 id="faq-title">よくある質問</h2></div>
+        <div class="faq-list">
+          <details><summary>Excelにも対応していますか？</summary><p data-faq-xlsx>xlsx形式の読み込みと納品は架空サンプルで確認済みです。標準範囲では先頭シートのみを扱います。数式セルは、お客様が再計算して保存した計算結果が必要です。こちらでは再計算しません。実データの受付は、安全な受渡・保管・削除手順の準備後です。</p></details>
+          <details><summary>CSVだけでも相談できますか？</summary><p data-faq-csv>はい。CSVのみも標準範囲案に含めています。現在は匿名化サンプルによる事前相談のみです。</p></details>
+          <details><summary>個人情報が入ったファイルを送れますか？</summary><p>いいえ。現在は個人情報、取引先名、社外秘情報を受け付けていません。匿名化したサンプルだけでご相談ください。ファイル添付もお控えください。</p></details>
+          <details><summary>表記ゆれを自動でまとめてもらえますか？</summary><p>意味を推測して同一人物・同一企業などと判断する名寄せは標準対象外です。事前に決めた機械的なルールによる整形を対象とします。</p></details>
+          <details><summary>20,000行を超える場合は？</summary><p>内容を確認し、対応可能な場合は別途お見積りします。作業を始める前に範囲と金額を合意します。</p></details>
+          <details><summary>納期は何日ですか？</summary><p>固定の納期は表示していません。内容を確認したあとに提示します。</p></details>
+          <details><summary>修正はできますか？</summary><p>標準範囲案では、事前に合意した仕様の範囲内で1回までです。</p></details>
+          <details><summary>実データはいつから送れますか？</summary><p data-faq-realdata>問い合わせ先と安全な受渡・保管・削除手順が整うまでは実データを受け取りません。現在は匿名化したサンプルによる事前相談のみです。</p></details>
+        </div>
+      </section>
+
+      <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="section-wrap contact-inner"><div><p class="section-kicker">CONTACT</p><h2 id="contact-title" data-contact-title>まずは、匿名化サンプルでご相談ください。</h2><p class="contact-copy" data-contact-description>現在は匿名化サンプルによる事前相談のみ受付中です。個人情報・取引先名・社外秘情報を含むデータやファイルは送らないでください。</p></div><div class="contact-action"><p class="contact-status" data-contact-status aria-live="polite">問い合わせ先設定後に利用できます。</p><a class="button button-primary mail-link" data-email-link href="#contact" hidden>メールで相談する</a><p class="contact-hint" data-contact-hint>このページにはファイル送信機能がありません。</p></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="section-wrap footer-inner"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>Excel・CSV整形代行</span></a><p>作業範囲と条件は、開始前に確認します。</p><a href="#top" class="footer-top">ページ上部へ</a></div><div class="section-wrap footer-bottom"><span>© <span data-year>2026</span> Excel・CSV整形代行</span><span>個人情報・社外秘情報は送らないでください。</span></div></footer>
+  </body>
+</html>
+
+
